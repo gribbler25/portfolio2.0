@@ -19,13 +19,16 @@
   /* font-size: calc(10px + 2vmin);
   color: white; */
 }
-.name{
+
+.name-foot{
   background-color: #508AA8;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-justify: center;
+  justify-content:space-between;
   width: 100%;
+}
+.name{
+  
 }
 /* .App-link {
   color: #61dafb;
