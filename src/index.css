@@ -12,7 +12,44 @@ code {
     monospace;
 }
 
+:root {
+  --primary: #508AA8;
+  --secondary: #9DD1F1;
+  --tertiary:#BA1247;
+  --quad: #031927;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  /* line-height: 1.5; */
+  letter-spacing: .1em;
+  background: var(--secondary);
+  color: var(--quad);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
 h1{
-  color: Purple;
-  font-size: large;
+  color: var(--tertiary);
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:#BA1247;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.mx-1{
+  padding: 30px;
+  font-size: 20px;
 }
