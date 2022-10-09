@@ -3,25 +3,26 @@ import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Project from "./components/Project";
-import Footer from "./components/Contactform";
+import Footer from "./components/Footer";
 
 function App() {
   // insert useState here
   const [renderAbout, setRenderAbout] = useState(true);
   return (
     <div className="App">
-      <Header renderAbout={setRenderAbout} />
+      <Header renderAbout={renderAbout} setRenderAbout={setRenderAbout} />
       <main>
-        {renderAbout ? (
+        {!renderAbout ? (
           <>
-            <About />
+            <Project />
           </>
         ) : (
-          <Project />
+          <About />
         )}
       </main>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

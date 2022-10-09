@@ -1,8 +1,14 @@
 import React from "react";
 
 const Navigation = (props) => {
-  const { titleSelected, setTitleSelected, renderAbout, setRenderAbout } =
-    props;
+  const {
+    titleSelected,
+    setTitleSelected,
+    renderAbout,
+    setRenderAbout,
+    contact,
+    setContact,
+  } = props;
 
   return (
     <nav>
@@ -10,7 +16,6 @@ const Navigation = (props) => {
         <li className="mx-1">
           <a
             href="#about"
-            data-testid="about"
             onClick={() => {
               setTitleSelected(true);
               setRenderAbout(true);
@@ -21,24 +26,32 @@ const Navigation = (props) => {
         </li>
 
         <li className={`mx-1 ${titleSelected && "navActive"}`}>
-          <span
-            onClick={() => {
-              setTitleSelected(true);
-              setRenderAbout(false);
-            }}
-          >
-            Contact
+          <span>
+            <a
+              href="#contact"
+              onClick={() => {
+                setTitleSelected(true);
+                setRenderAbout(false);
+                setContact(true);
+              }}
+            >
+              Contact
+            </a>
           </span>
         </li>
 
         <li className={`mx-1 ${titleSelected && "navActive"}`}>
-          <span
-            onClick={() => {
-              setTitleSelected(true);
-              setRenderAbout(false);
-            }}
-          >
-            Portfolio
+          <span>
+            <a
+              href="#portfolio"
+              onClick={() => {
+                setTitleSelected(true);
+                setRenderAbout(false);
+                setContact(false);
+              }}
+            >
+              Portfolio
+            </a>
           </span>
         </li>
 

@@ -53,7 +53,7 @@ a{
 .name-foot{
   background-color: #508AA8;
   display: flex;
-  text-shadow:2px 3px 2px #ba1269;
+  text-shadow:3px 3px var(--secondary);
   text-justify: center;
   justify-content:space-between;
   width: 100%;
@@ -72,7 +72,7 @@ ul{
   list-style: none;
 }
 .portfolio-list{
-  font-size: 20px;
+  font-size: 15px;
   color: var(--tertiary)
 }
 .mx-1{
@@ -84,4 +84,18 @@ ul{
 }
 .skills-heading{
   color: var(--tertiary);
+}
+.skill-list{
+  color: var(--quad);
+  /* display: inline; */
+  list-style: none;
+  line-height: 1.5;
+}
+.navActive{
+  color: var(--tertiary);
+}
+.portfolio{
+  display:  flex;
+  list-style: none;
+  flex-wrap: wrap;
 }

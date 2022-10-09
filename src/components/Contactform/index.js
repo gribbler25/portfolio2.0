@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 const ContactForm = (props) => {
+  const { contact, setContact, renderAbout, setRenderAbout } = props;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -33,12 +34,14 @@ const ContactForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setContact(false);
+    setRenderAbout(true);
     console.log(formState);
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact Me</h1>
+    <section id="contact">
+      <h1>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -74,9 +77,7 @@ const ContactForm = (props) => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" data-testid="buttontag">
-          Submit!
-        </button>
+        <button type="submit">Submit!</button>
       </form>
     </section>
   );
