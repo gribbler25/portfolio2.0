@@ -1,6 +1,6 @@
 // import React, { useEffect } from "react";
-
-const About = () => {
+import profilePic from "../../assets/images/profilePic3.jpg";
+const About = (props) => {
   const skills = [
     {
       name: "HTML / CSS",
@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <img src={require("../../assets/images/profilePic3.jpg")} />
+      <img src={profilePic} />
       <p className="paragraph">
         Full stack web developer with a certificate from the University of
         Wisconsin Coding Bootcamp leveraging extensive interdisciplinary
@@ -35,7 +35,7 @@ const About = () => {
         special passion for continuous learning through collaborative projects
         invlolving back-end data use and management problem solving.
       </p>
-      <h2>Technical Skills Include:</h2>
+      <h2 className="skills-heading">Technical Skills Include:</h2>
       {/* looking dynamically render into <li> elements from an object "Skills" to be able to update easily in future>    HTML/ CSS JavaScript  Node.js  SQL  NoSQL  GraphQL  React*/}
       <ul>
         <li>{skills[0].name}</li>

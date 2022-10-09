@@ -1,34 +1,27 @@
 import React, { useState } from "react";
 import "./App.css";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Project from "./components/Project";
+import Footer from "./components/Contactform";
 
 function App() {
+  // insert useState here
+  const [renderAbout, setRenderAbout] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="name-foot">
-          <h1>Sarah Nguyen</h1>
-        </div>
-        <div className="flex-row">
-          <Nav />
-        </div>
-      </header>
+      <Header renderAbout={setRenderAbout} />
       <main>
-        <About />
-
-        <Portfolio />
+        {renderAbout ? (
+          <>
+            <About />
+          </>
+        ) : (
+          <Project />
+        )}
       </main>
-      <footer className="name-foot">
-        <a href="https://github.com/gribbler25" target="blank">
-          GitHub profile
-        </a>
-        <a href="https://www.linkedin.com/in/snguyen25/">linkedin profile</a>
-        <a href="https://stackoverflow.com/users/18156590/gribbler25">
-          stackoverflow profile
-        </a>
-      </footer>
+
+      <Footer />
     </div>
   );
 }
