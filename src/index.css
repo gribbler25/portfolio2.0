@@ -11,9 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.navActive{
-  color:var(--tertiary);
-}
+
 :root {
   --primary: #508AA8;
   --secondary: #9DD1F1;
@@ -99,3 +97,6 @@ ul{
   list-style: none;
   flex-wrap: wrap;
 }
+/* .contact{
+
+} */

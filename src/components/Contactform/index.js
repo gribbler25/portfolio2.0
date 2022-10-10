@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 const ContactForm = (props) => {
-  const { contact, setContact, renderAbout, setRenderAbout } = props;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -34,13 +33,12 @@ const ContactForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setContact(false);
-    setRenderAbout(true);
+    window.location = `mailto:gribbler25@gmail.com?subject=message from ${formState.name}&body=${formState.message}`;
     console.log(formState);
   };
 
   return (
-    <section id="contact">
+    <section id="contact" class="contact">
       <h1>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>

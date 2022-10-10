@@ -6,7 +6,7 @@ import runBuddy from "../../assets/images/run-buddy.png";
 import taskinator from "../../assets/images/taskinator.png";
 import iReadit from "../../assets/images/iReadit-app.png";
 
-const Portfolio = () => {
+const Project = () => {
   const myWork = [
     {
       name: "Weather-App",
@@ -63,4 +63,4 @@ const Portfolio = () => {
     </section>
   );
 };
-export default Portfolio;
+export default Project;
