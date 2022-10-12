@@ -34,11 +34,13 @@ const ContactForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     window.location = `mailto:gribbler25@gmail.com?subject=message from ${formState.name}&body=${formState.message}`;
-    console.log(formState);
+    // console.log(formState);
+    // setFormState({ name: "", email: "", message: "" }); //doesn't appear to be clearing the form.
+    //document.getElementById("contact-form").reset();  this isn't working either...
   };
 
   return (
-    <section id="contact" class="contact">
+    <section id="contact" className="contact">
       <h1>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>

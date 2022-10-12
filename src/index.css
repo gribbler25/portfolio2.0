@@ -90,13 +90,14 @@ ul{
   line-height: 1.5;
 }
 .navActive{
-  color: var(--tertiary);
+  color: var(--quad);
 }
 .portfolio{
   display:  flex;
   list-style: none;
   flex-wrap: wrap;
 }
-/* .contact{
-
-} */
+.contact{
+display: flex;
+justify-content: space-around;
+}

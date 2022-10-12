@@ -25,6 +25,7 @@ function App() {
         resume: false,
       };
       currentTitle[selected] = true;
+      setTitleSelected(currentTitle);
       return currentTitle;
     });
 
