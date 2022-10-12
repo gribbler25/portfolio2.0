@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="about" id="about">
-      <img src={profilePic} alt="profile picture" />
+      <img src={profilePic} />
       <p className="paragraph">
         Full stack web developer with a certificate from the University of
         Wisconsin Coding Bootcamp leveraging extensive interdisciplinary
