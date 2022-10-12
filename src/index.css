@@ -29,7 +29,7 @@ body {
   letter-spacing: .1em;
   background: var(--secondary);
   color: var(--quad);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 
 }
 h1{
@@ -37,9 +37,29 @@ h1{
 }
 a{
   text-decoration: none;
+  margin: 20px 10px 20px 10px;
 }
+
+.App-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.name-foot{
+  background-color: #508AA8;
+  display: flex;
+  text-shadow:3px 3px var(--secondary);
+  text-justify: center;
+  justify-content:space-between;
+  width: 100%;
+}
+
 a:hover{
-  color:#BA1247;
+  color:var(--tertiary);
+  text-shadow: 2px 2px var(--quad);
 }
 .flex-row {
   display: flex;
@@ -49,7 +69,35 @@ a:hover{
 ul{
   list-style: none;
 }
+.portfolio-list{
+  font-size: 15px;
+  color: var(--tertiary)
+}
 .mx-1{
   padding: 30px;
   font-size: 20px;
+}
+.paragraph{
+  line-height: 1.5;
+}
+.skills-heading{
+  color: var(--tertiary);
+}
+.skill-list{
+  color: var(--quad);
+  /* display: inline; */
+  list-style: none;
+  line-height: 1.5;
+}
+.navActive{
+  color: var(--quad);
+}
+.portfolio{
+  display:  flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.contact{
+display: flex;
+justify-content: space-around;
 }
