@@ -17,6 +17,7 @@ function App() {
   const [currentSelection, setCurrentSelection] = useState("about");
 
   const handleToggleSelected = (selected) => {
+    //this selected value will be either about/contact/portfolio/resume
     setTitleSelected(({ about, contact, portfolio, resume }) => {
       const currentTitle = {
         about: false,
@@ -25,14 +26,16 @@ function App() {
         resume: false,
       };
       currentTitle[selected] = true;
-      setTitleSelected(currentTitle);
+      setTitleSelected(currentTitle); //first make them all(titles) false , then set the one that's in the arguments above to 'true' to change the color
       return currentTitle;
     });
 
-    setCurrentSelection(selected);
+    setCurrentSelection(selected); //then set a state of 'currentSelection' from above to that same title's name so currentSelection can be used as a value below
   };
 
-  const renderMain = (currentSelect) =>
+  const renderMain = (
+    currentSelect //renderMain is a function that can be called to select which component to render based on currentSelect value
+  ) =>
     ({
       about: <About />,
       contact: <ContactForm />,

@@ -3,7 +3,7 @@ import weatherApp from "../../assets/images/weatherApp.png";
 import techBlog from "../../assets/images/tech-blog.png";
 import pizzaHunt from "../../assets/images/pizza-hunt.png";
 import runBuddy from "../../assets/images/run-buddy.png";
-import taskinator from "../../assets/images/taskinator.png";
+import cookies from "../../assets/images/cookies.png";
 import iReadit from "../../assets/images/iReadit-app.png";
 
 const Project = () => {
@@ -33,10 +33,10 @@ const Project = () => {
       gitHub: "https://github.com/gribbler25/run-buddy",
     },
     {
-      name: "Taskinator",
-      image: taskinator,
-      url: "https://gribbler25.github.io/Taskinator/",
-      gitHub: "https://github.com/gribbler25/Taskinator",
+      name: "Quick Cookies",
+      image: cookies,
+      url: "https://boywondr84.github.io/mern-subscription/",
+      gitHub: "https://github.com/Boywondr84/mern-subscription",
     },
     {
       name: "iReadit-app",
