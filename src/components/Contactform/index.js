@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import { Button, Container } from "react-bootstrap";
 
 const ContactForm = (props) => {
   const [formState, setFormState] = useState({
@@ -40,46 +41,48 @@ const ContactForm = (props) => {
   };
 
   return (
-    <section id="contact" className="contact">
+    <Container id="contact" className="contact">
       <h1>Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onBlur={handleChange}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onBlur={handleChange}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            row="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </div>
-        {errorMessage && (
+      <Container className="bg-light mb-4 rounded-3">
+        <form id="contact-form" onSubmit={handleSubmit}>
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              defaultValue={name}
+              onBlur={handleChange}
+            />
           </div>
-        )}
-        <button type="submit">Submit!</button>
-      </form>
-    </section>
+
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              defaultValue={email}
+              onBlur={handleChange}
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message">Message:</label>
+            <textarea
+              name="message"
+              row="5"
+              defaultValue={message}
+              onBlur={handleChange}
+            />
+          </div>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <Button type="submit">Submit!</Button>
+        </form>
+      </Container>
+    </Container>
   );
 };
 
