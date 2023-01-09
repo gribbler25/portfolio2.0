@@ -35,7 +35,7 @@ const Project = () => {
     {
       name: "Quick Cookies",
       image: cookies,
-      url: "https://boywondr84.github.io/mern-subscription/",
+      url: "https://thawing-basin-74038.herokuapp.com/",
       gitHub: "https://github.com/Boywondr84/mern-subscription",
     },
     {

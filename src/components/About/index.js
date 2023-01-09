@@ -1,5 +1,5 @@
 // import React, { useEffect } from "react";
-import profilePic from "../../assets/images/profilePic3.jpg";
+import profilePic from "../../assets/images/headshot.jpg";
 const About = () => {
   const skills = [
     {
