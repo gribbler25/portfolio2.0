@@ -79,6 +79,7 @@ const ContactForm = (props) => {
           <Form.Control
             type="text"
             name="message"
+            placeholder="Your message here!"
             onBlur={handleChange}
             defaultValue={message}
           />

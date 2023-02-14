@@ -11,14 +11,14 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        linkedin profile
+        Linkedin profile
       </a>
       <a
         href="https://stackoverflow.com/users/18156590/gribbler25"
         target="_blank"
         rel="noreferrer"
       >
-        stackoverflow profile
+        Stackoverflow profile
       </a>
     </footer>
   );
