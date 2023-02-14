@@ -58,6 +58,7 @@ const ContactForm = (props) => {
           <Form.Control
             type="text"
             name="name"
+            placeholder="Your name"
             defaultValue={name}
             onBlur={handleChange}
           />
@@ -68,7 +69,7 @@ const ContactForm = (props) => {
           <Form.Control
             type="email"
             name="email"
-            placeholder="enter email"
+            placeholder="Enter email address"
             onBlur={handleChange}
             defaultValue={email}
           />
